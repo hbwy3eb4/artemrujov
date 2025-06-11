@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/basic-mobile-part-2/512/genealogy-512.png"/>
+    <head>
+        <meta charset="UTF-8">
+        <title>Вход</title>
+        <!-- подключаем бутстрап -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    </head>
+    <body>
+
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+            <style>
+                :root {
+                    --primary: #4e73df;
+                    --secondary: #858796;
+                    --accent: #36b9cc;
+                    --light: #f8f9fc;
+                    --dark: #2e4374;
+                }
+                
+                .hero-section {
+                    background: linear-gradient(rgba(46, 67, 116, 0.8), rgba(46, 67, 116, 0.8)), url('https://source.unsplash.com/random/1920x1080/?family,heritage') no-repeat center center;
+                    background-size: cover;
+                    padding: 150px 0;
+                    color: white;
+                }
+                
+                .feature-card {
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    border: none;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    height: 100%;
+                }
+                
+                .feature-card:hover {
+                    transform: translateY(-10px);
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+                }
+                
+                .family-tree-preview {
+                    background-color: #f8f9fc;
+                    padding: 50px 0;
+                }
+                
+                .testimonial-card {
+                    border-left: 4px solid var(--accent);
+                }
+                
+                .cta-section {
+                    background: linear-gradient(to right, #2e4374, #4e73df);
+                    color: white;
+                    padding: 80px 0;
+                }
+                
+                footer {
+                    background-color: var(--dark);
+                    color: white;
+                }
+                
+                .timeline-img {
+                    width: 100%;
+                    border-radius: 10px;
+                    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+                }
+        
+                /* Стили для формы регистрации */
+                .registration-form .form-control {
+                    border-radius: 8px;
+                    padding: 12px 15px;
+                    margin-bottom: 15px;
+                }
+                
+                .registration-form .btn-register {
+                    background-color: var(--primary);
+                    color: white;
+                    border: none;
+                    padding: 12px;
+                    font-weight: 500;
+                    transition: background-color 0.3s;
+                }
+                
+                .registration-form .btn-register:hover {
+                    background-color: #3a56c4;
+                }
+                
+                .social-login-btn {
+                    border: 1px solid #ddd;
+                    border-radius: 8px;
+                    padding: 10px;
+                    text-align: center;
+                    margin-bottom: 10px;
+                    transition: background-color 0.3s;
+                }
+                
+                .social-login-btn:hover {
+                    background-color: #f8f9fa;
+                    cursor: pointer;
+                }
+                
+                .divider {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    margin: 20px 0;
+                }
+                
+                .divider::before,
+                .divider::after {
+                    content: '';
+                    flex: 1;
+                    border-bottom: 1px solid #dee2e6;
+                }
+                
+                .divider-text {
+                    padding: 0 10px;
+                    color: #6c757d;
+                }
+            </style>
+            
+        </head>
+        <body>
+            <!-- Навигационная панель -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="file://wsl.localhost/Ubuntu-24.04/home/student/mysite/blog/templates/family/post_list.html#">
+                        <i class="fas fa-tree me-2"></i>Семейная Память
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="file://wsl.localhost/Ubuntu-24.04/home/student/mysite/blog/templates/family/post_list.html#">Главная</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Возможности</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Примеры</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Тарифы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Контакты</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="btn btn-outline-light" href="register.html">Войти</a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="btn btn-primary" href=Registr.html>Регистрация</a>
+                                
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        
+
+
+           <!-- создаём контейнер -->
+           <div>
+           <div class="container">
+            <div class="row">
+                <!-- указываем стиль адаптивной вёрстки -->
+                <div class="col-md-12">
+                    <!-- пишем заголовок и пояснительный текст -->
+                    <h2> </h2>
+                    <h2>Вход</h2>
+                    <p>Введите свою почту и пароль.</p>
+                    <!-- метод, которым будем работать с формой — отправлять на сервер -->
+                    <form action="" method="post">
+                        <!-- поле ввода электронной почты -->
+                        <div class="form-group">
+                            <label>Электронная почта</label>
+                            <input type="email" name="email" class="form-control" required />
+                        </div>    
+                        <!-- поле ввода пароля -->
+                        <div class="form-group">
+                            <label>Пароль</label>
+                            <input type="password" name="password" class="form-control" required>
+                        </div>
+                        <!-- кнопка отправки данных на сервер -->
+                        <div class="form-group">
+                            <input type="submit" name="submit" class="btn btn-primary" value="Войти">
+                        </div>
+                        <!-- ссылка для тех, у кого ещё нет аккаунта -->
+                        <p>Нет аккаунта? <a href="register.php"><a class="btn btn-primary" href=https://oauth.yandex.ru >Создайте его за минуту</a>.</p> 
+                    </form>
+                </div>
+            </div>
+           </div>    
+    </body>
+</html>
