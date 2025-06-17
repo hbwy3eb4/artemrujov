@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <link rel="icon" type="image/png" href="https://cdn3.iconfinder.com/data/icons/basic-mobile-part-2/512/genealogy-512.png"/>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Семейная память - Сохраните историю вашей семьи</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #4e73df;
+            --secondary: #858796;
+            --accent: #36b9cc;
+            --light: #f8f9fc;
+            --dark: #2e4374;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(46, 67, 116, 0.8), rgba(46, 67, 116, 0.8)), url('https://source.unsplash.com/random/1920x1080/?family,heritage') no-repeat center center;
+            background-size: cover;
+            padding: 150px 0;
+            color: white;
+        }
+        
+        .feature-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            height: 100%;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .family-tree-preview {
+            background-color: #f8f9fc;
+            padding: 50px 0;
+        }
+        
+        .testimonial-card {
+            border-left: 4px solid var(--accent);
+        }
+        
+        .cta-section {
+            background: linear-gradient(to right, #2e4374, #4e73df);
+            color: white;
+            padding: 80px 0;
+        }
+        
+        footer {
+            background-color: var(--dark);
+            color: white;
+        }
+        
+        .timeline-img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Стили для формы регистрации */
+        .registration-form .form-control {
+            border-radius: 8px;
+            padding: 12px 15px;
+            margin-bottom: 15px;
+        }
+        
+        .registration-form .btn-register {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+        }
+        
+        .registration-form .btn-register:hover {
+            background-color: #3a56c4;
+        }
+        
+        .social-login-btn {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .social-login-btn:hover {
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
+        
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        .divider-text {
+            padding: 0 10px;
+            color: #6c757d;
+        }
+    </style>
+    
+</head>
+<body>
+    <!-- Навигационная панель -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-tree me-2"></i>Семейная Память
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Возможности</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Примеры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Тарифы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-outline-light" href="register.html">Войти</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href=Registr.html>Регистрация</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    
+
+
+    <section class="hero-section text-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h1 class="display-4 fw-bold mb-4">Сохраните историю вашей семьи для будущих поколений</h1>
+<p class="lead mb-5">Создайте цифровой архив фотографий, документов и воспоминаний. Постройте генеалогическое древо и делитесь семейной историей с родными.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="member_detail.html" class="btn btn-primary btn-lg px-4 py-3">Начать бесплатно</a>
+                        <a href="family_tree.html" class="btn btn-outline-light btn-lg px-4 py-3">Посмотреть примеры</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    <!-- Возможности -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Сохраните ваше наследие</h2>
+                <p class="text-muted">Все инструменты для сохранения семейной истории в одном месте</p>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon bg-primary rounded-circle p-3 mb-4 d-inline-block">
+                                <i class="fas fa-tree fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Генеалогическое древо</h3>
+                            <p class="card-text">Создайте интерактивное древо семьи с фотографиями и информацией о каждом родственнике. Автоматическое построение связей.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon bg-primary rounded-circle p-3 mb-4 d-inline-block">
+                                <i class="fas fa-images fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Цифровой архив</h3>
+                            <p class="card-text">Храните фотографии, документы, письма и аудиозаписи в одном защищенном месте. Автоматическое распознавание лиц и тегов.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon bg-primary rounded-circle p-3 mb-4 d-inline-block">
+                                <i class="fas fa-book fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Семейные истории</h3>
+                            <p class="card-text">Записывайте воспоминания старших поколений. Создавайте истории с фотографиями и геолокацией. Преобразуйте аудио в текст.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon bg-primary rounded-circle p-3 mb-4 d-inline-block">
+                                <i class="fas fa-share-alt fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Совместный доступ</h3>
+                            <p class="card-text">Пригласите родственников для совместного наполнения архива. Управляйте правами доступа для разных членов семьи.</p>
+                        </div>
+                    </div>
+                </div>
+<div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon bg-primary rounded-circle p-3 mb-4 d-inline-block">
+                                <i class="fas fa-map-marked-alt fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Исторические карты</h3>
+                            <p class="card-text">Отмечайте места рождения, важных событий и миграции семьи на картах разных исторических периодов.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="feature-card card h-100">
+                        <div class="card-body p-4">
+                            <div class="feature-icon bg-primary rounded-circle p-3 mb-4 d-inline-block">
+                                <i class="fas fa-mobile-alt fa-2x text-white"></i>
+                            </div>
+                            <h3 class="card-title">Мобильное приложение</h3>
+                            <p class="card-text">Доступ ко всему архиву с телефона. Сканируйте документы, записывайте истории и показывайте родственникам где угодно.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Пример древа -->
+    <section class="family-tree-preview">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fw-bold mb-4">Создайте ваше семейное древо за минуты</h2>
+                    <p>Наш интуитивный конструктор поможет быстро построить генеалогическое древо любой сложности. Просто добавляйте родственников и указывайте связи между ними.</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Автоматическое построение связей</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Интеграция с историческими архивами</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Экспорт в PDF и GEDCOM</li>
+                        <li class="mb-2"><i class="fas fa-check-circle text-success me-2"></i> Публикация и совместный доступ</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary mt-3">Попробовать конструктор</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://image.winudf.com/v2/image/Y29tLm1vZWdlbmVhbG9naWNoZXNrb2VkcmV2by5hcHBfc2NyZWVuXzBfMTUzMzM2OTg5OF8wNzE/screen-0.jpg?h=800&fakeurl=1&type=.jpg" alt="Пример семейного древа" class="timeline-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Призыв к действию -->
+    <section class="cta-section text-center">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-4">Начните сохранять вашу семейную историю сегодня</h2>
+            <p class="lead mb-5">Присоединяйтесь к тысячам семей, которые уже создали свои цифровые архивы</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="#" class="btn btn-light btn-lg px-5 py-3">Бесплатная регистрация</a>
+                <a href="#" class="btn btn-outline-light btn-lg px-5 py-3">Посмотреть тарифы</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4"><i class="fas fa-tree me-2"></i>Семейная Память</h4>
+                    <p>Цифровой архив для сохранения вашей семейной истории и построения генеалогического древа.</p>
+                    <div class="d-flex gap-3 mt-4">
+                        <a href= https://vk.com/ class="text-white"><i class="fab fa-vk fa-lg"></i></a>
+                        <a href= https://t.me/+79851642840 class="text-white"><i class="fab fa-telegram fa-lg"></i></a>
+                        <a href= https://www.youtube.com/ class="text-white"><i class="fab fa-youtube fa-lg"></i></a>
+<a href="#" class="text-white"><i class="fab fa-odnoklassniki fa-lg"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">О сервисе</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Возможности</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Примеры</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Тарифы</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Блог</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-2 col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Помощь</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Вопросы и ответы</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Инструкции</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Форум</a></li>
+                        <li class="mb-2"><a href="#" class="text-white text-decoration-none">Контакты</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="mb-4">Подписка на новости</h5>
+                    <p>Получайте советы по составлению семейной истории и узнавайте о новых возможностях сервиса</p>
+                    <div class="input-group mb-3">
+                        <input type="a.rujov@yandex.ru" class="form-control" placeholder= a.rujov@yandex.ru>
+                        <button class="btn btn-primary" type="button">Подписаться</button>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-5 border-light">
+            
+            <div class="text-center">
+                <p class="mb-0">&copy; 2023 Семейная Память. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
