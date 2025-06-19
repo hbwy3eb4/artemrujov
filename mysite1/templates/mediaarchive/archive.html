@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container py-4">
+  <h2 class="mb-4">Семейный архив</h2>
+  <form method="post" enctype="multipart/form-data" class="mb-4">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Загрузить</button>
+  </form>
+  <div class="row">
+    {% for file in files %}
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          {% if file.file.url|lower|endswith:'.jpg' or file.file.url|lower|endswith:'.png' or file.file.url|lower|endswith:'.jpeg' %}
+            <img src="{{ file.file.url }}" class="card-img-top" alt="{{ file.title }}">
+          {% elif file.file.url|lower|endswith:'.mp4' or file.file.url|lower|endswith:'.webm' %}
+            <video controls class="w-100"><source src="{{ file.file.url }}"></video>
+          {% else %}
+            <div class="p-4 text-center text-muted">Файл: <a href="{{ file.file.url }}">{{ file.file.name }}</a></div>
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title">{{ file.title }}</h5>
+            <p class="card-text">{{ file.description }}</p>
+            <p class="card-text"><small class="text-muted">{{ file.uploaded_at|date:"d.m.Y H:i" }}</small></p>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %} 
